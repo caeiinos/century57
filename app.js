@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function checkRowForThree() {
-    for (i = 0; i < 61; i++) {
+    for (i = width; i < width * width - width; i++) {
       let rowOfThree = [i, i + 1, i - 1, i + width, i - width]
       let decidedColor = squares[i].style.backgroundImage
       const isBlank = squares[i].style.backgroundImage === ''
