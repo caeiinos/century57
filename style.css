@@ -1,7 +1,8 @@
 .grid {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 80px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
     background-color: rgba(109, 127, 151, 0.5);
     padding:5px;
@@ -23,31 +24,57 @@ h3 {
 h1 {
  font-family: "Montserrat", sans-serif;
  text-transform: uppercase;
- margin-top: -10px;
 }
 
 .invisible {
     background-color: white;
 }
 
-body {
+.action{
+  margin-left: auto;
+  margin-right: auto;
+
+  justify-content: space-around;
   display: flex;
+  align-items: center;
+  text-align: center;
+  width: 250px;
+}
+
+.action__e{
+  background-color: transparent;
+  border: none;
+
+  padding: 10px 20px;
+  background-image: linear-gradient(#b6eaff, #c0e5ff);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
+  color: #212121;
+}
+
+#action__e--sleep{
+  background-image: linear-gradient(#b8b8b8, #d0d0d0);
+  transform: scale(0.9);
+}
+
+#action__e--sleep svg{
+  opacity: .6;
 }
 
 .score-board {
   background-color: pink;
   border-radius: 10px;
-  margin-top: 200px;
-  margin-left: 200px;
-  margin-bottom: 350px;
-  min-width: 200px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 200px;
 
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(#FFB6C1, #FFC0CB);
+  background-image: linear-gradient(#ccffb6, #c0ffd0);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
-  color: #85796b;
+  color: #212121;
 }
