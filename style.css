@@ -1,11 +1,10 @@
 .grid {
-  width: 140px;
-  height: 140px;
+  width: 700px;
+  height: 700px;
     display: flex;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
     background-color: rgba(109, 127, 151, 0.5);
     padding:5px;
     border-radius: 10px;
@@ -19,10 +18,29 @@
 }
 
 .playGround{
+  transform: rotateX(55deg) rotateZ(45deg);
+
   display: grid;
   grid-template-columns:1fr 1fr 1fr ;
   width:fit-content ;
   margin: 0% auto;
+}
+
+.grid--mine{
+  grid-column: 1;
+  grid-row: 2;
+}
+.grid--champ{
+  grid-column: 2;
+  grid-row: 3;
+}
+.grid--bois{
+  grid-column: 2;
+  grid-row: 1;
+}
+.grid--cristal{
+  grid-column: 3;
+  grid-row: 2;
 }
 
 h3 {
@@ -48,6 +66,7 @@ h1 {
   align-items: center;
   text-align: center;
   width: 250px;
+  margin-bottom: 50px;
 }
 
 .metier__e{
@@ -86,4 +105,9 @@ h1 {
   background-image: linear-gradient(#ccffb6, #c0ffd0);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
   color: #212121;
+}
+
+.action{
+  transform: rotateX(0deg) rotateZ(-45deg);
+  list-style: none;
 }
