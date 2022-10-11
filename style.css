@@ -1,4 +1,6 @@
 .grid {
+  width: 140px;
+  height: 140px;
     display: flex;
     flex-wrap: wrap;
     margin-left: auto;
@@ -7,13 +9,20 @@
     background-color: rgba(109, 127, 151, 0.5);
     padding:5px;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) , 0 1px 0 #fff;
     color: #85796b;
 }
 
 .grid div {
     height: 70px;
     width: 70px;
+}
+
+.playGround{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr ;
+  width:fit-content ;
+  margin: 0% auto;
 }
 
 h3 {
@@ -30,7 +39,7 @@ h1 {
     background-color: white;
 }
 
-.action{
+.metier{
   margin-left: auto;
   margin-right: auto;
 
@@ -41,7 +50,7 @@ h1 {
   width: 250px;
 }
 
-.action__e{
+.metier__e{
   background-color: transparent;
   border: none;
 
@@ -52,12 +61,12 @@ h1 {
   color: #212121;
 }
 
-#action__e--sleep{
+.metier__e--sleep{
   background-image: linear-gradient(#b8b8b8, #d0d0d0);
   transform: scale(0.9);
 }
 
-#action__e--sleep svg{
+.metier__e--sleep svg{
   opacity: .6;
 }
 
